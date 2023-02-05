@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CardComponent } from './card/card.component';
 import { CompanionsBoardComponent } from './companions-board/companions-board.component';
 import { SharedModule } from '../shared/shared.module';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { SharedModule } from '../shared/shared.module';
     CompanionsBoardComponent,
   ],
   imports: [
-    SharedModule
+    SharedModule,
+    MatChipsModule
   ],
   exports: [CompanionsBoardComponent]
 })
