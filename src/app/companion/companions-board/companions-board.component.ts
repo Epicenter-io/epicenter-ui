@@ -3,11 +3,11 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-companions-cards',
-  templateUrl: './companions-cards.component.html',
-  styleUrls: ['./companions-cards.component.scss']
+  selector: 'app-companions-board',
+  templateUrl: './companions-board.component.html',
+  styleUrls: ['./companions-board.component.scss']
 })
-export class CompanionsCardsComponent {
+export class CompanionsBoardComponent {
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {

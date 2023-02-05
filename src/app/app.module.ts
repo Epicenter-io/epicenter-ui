@@ -4,31 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CompanionsCardsComponent } from './companions-cards/companions-cards.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LayoutModule } from '@angular/cdk/layout';
 import { NavigationModule } from './navigation/navigation.module';
+import { SharedModule } from './shared/shared.module';
+import { CompanionModule } from './companion/companion.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompanionsCardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    LayoutModule,
-    NavigationModule
+    
+    NavigationModule,
+    SharedModule,
+    CompanionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

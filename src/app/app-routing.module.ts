@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CompanionsCardsComponent } from './companions-cards/companions-cards.component';
+import { CompanionsBoardComponent } from './companion/companions-board/companions-board.component';
 
 const routes: Routes = [
 
+  { path: 'companions', component: CompanionsBoardComponent }
 
-  {
-    path: 'companions',
-    component: CompanionsCardsComponent
-},
 ];
 
 @NgModule({

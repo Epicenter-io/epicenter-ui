@@ -7,15 +7,15 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { CompanionsCardsComponent } from './companions-cards.component';
+import { CompanionsBoardComponent } from './companions-board.component';
 
-describe('CompanionsCardsComponent', () => {
-  let component: CompanionsCardsComponent;
-  let fixture: ComponentFixture<CompanionsCardsComponent>;
+describe('CompanionsBoardComponent', () => {
+  let component: CompanionsBoardComponent;
+  let fixture: ComponentFixture<CompanionsBoardComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [CompanionsCardsComponent],
+      declarations: [CompanionsBoardComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -29,7 +29,7 @@ describe('CompanionsCardsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CompanionsCardsComponent);
+    fixture = TestBed.createComponent(CompanionsBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
